@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Adventures</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            font-family: 'TIMES NEW ROMAN', sans-serif;
+            background: #0c0c0c;
+            color: #333;
+        }
+        .navbar {
+            display: flex;
+            background-color: #252729dc; 
+            color: white;
+            padding: 10px 20px;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(192, 245, 1, 0.1);
+            border-radius: 8px;
+        }
+        .navbar a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            border-radius: 5px;
+        }
+        .navbar a:hover {
+            background-color: #fa9005; 
+        }
+
+        .hero-image {
+            height: 500px;
+            background:url("https://cdn.pixabay.com/photo/2019/11/08/09/27/family-4610864_1280.jpg") no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(248, 248, 248);
+            font: bold ;
+            font-size: 70px;
+            border-radius: 8px;
+        }
+
+
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: rgb(78, 73, 73);
+            color: #f7f7f7;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(255, 254, 254, 0.2);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 8px;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px #fa9005;
+        }
+
+
+        .footer {
+            background-color: #fa9005;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            background-color: #f7f7f7;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            width: 100%;
+            background-color: #ac6508;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color:#fa9005;
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div>Travel Adventures</div>
+        <div>
+            <a href="#home">Home</a>
+            <a href="Abouts.html">About</a>
+            <a href="destination.html">Destinations</a>
+            <a href="Booknow.html">BOOK NOW!</a>
+        </div>
+    </div>
+
+    <div id="home" class="hero-image">
+        <div>Start your Journey with Travel Adventures</div>
+        
+    </div>
+
+    <div id="about" class="section">
+        <h2>About Us</h2>
+        <p>"Welcome to our world of wanderlust! At Travel Adventures, we're passionate adventurers, storytellers, and trailblazers. From scaling majestic peaks to diving into the depths of vibrant cultures, we're here to inspire and guide you on your next unforgettable journey. Join us as we uncover the extraordinary, embrace the unknown, and create memories that last a lifetime. Let's embark on this thrilling adventure together!"</p>
+    </div>
+    <div id="destinations" class="section">
+        
+        <div class="gallery">
+            <img src="E:\html\paris - Copy.jpg" alt="Paris">
+            <img src="E:\html\rome.jpg" alt="Rome">
+            <img src="E:\html\Website\tokyo.jpg" alt="Tokyo">
+            <img src="E:\html\bali.jpg" alt="Bali">
+            <img src="E:\html\images.jpeg" alt="New York">
+            <img src="E:\html\The20Khalifa-GettyImages-1084264582.webp" alt="Dubai">
+            <img src="E:\html\winter-in-switzerland-final-1681881755-785X440.jpg" alt="Switzerland">
+            <img src="E:\html\20200229_132537 beach.jpg" alt="Goa">
+
+
+
+        
+        </div>
+    </div>
+
+    <div id="contact" class="section">
+        <h2>Book Now!</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+
+    <div id="Why Choose Travel Adventures?" class="section">
+   <h2>Why Choose Travel Adventures?</h2>
+   <p>Choosing Travel Adventures opens up a world of possibilities and experiences unlike any other. Here's why our platform is your ultimate gateway to unforgettable journeys <br>
+
+    1. Curated Experiences: We handpick the most unique and thrilling adventures from around the globe, ensuring every trip is filled with excitement and wonder. <br>
+    
+    2. Expert Guidance: Our team of travel experts provides personalized recommendations and insider tips, guaranteeing a seamless and enriching experience from start to finish. <br>
+    
+    3. Safety First: Your safety is our top priority. We partner with trusted vendors and prioritize stringent safety measures to ensure you can explore with peace of mind. <br>
+    
+    4. Community Connection: Travel Adventures isn't just about the destinations; it's about the people you meet along the way. Join a community of fellow explorers who share your passion for discovery and create lifelong memories together. <br>
+    
+    5. Unforgettable Memories: From adrenaline-pumping activities to awe-inspiring landscapes, Travel Adventures promises moments you'll cherish forever. Get ready to embark on the journey of a lifetime with us. <br>
+    
+</p>  </div>
+    <div id="Contact Us" class="section">
+        <h2>Contact Us</h2>
+    <p>1011-899-7847, traveladventures@gmail.com </p> </div>
+
+    <div class="footer">
+        <p>Copyright © Travel Adventures 2024 </p>
+    </div>
+</body>
+</html> 
