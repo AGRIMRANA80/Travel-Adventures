@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Adventures</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <style>
-        body, html {
+        body,
+        html {
             margin: 0;
             padding: 0;
             scroll-behavior: smooth;
@@ -14,9 +17,10 @@
             background: #0c0c0c;
             color: #333;
         }
+
         .navbar {
             display: flex;
-            background-color: #252729dc; 
+            background-color: #252729dc;
             color: white;
             padding: 10px 20px;
             justify-content: space-between;
@@ -24,6 +28,7 @@
             box-shadow: 0 2px 5px rgba(192, 245, 1, 0.1);
             border-radius: 8px;
         }
+
         .navbar a {
             color: white;
             padding: 10px 15px;
@@ -31,22 +36,22 @@
             transition: background-color 0.3s;
             border-radius: 5px;
         }
+
         .navbar a:hover {
-            background-color: #fa9005; 
+            background-color: #fa9005;
         }
 
         .hero-image {
             height: 500px;
-            background:url("https://cdn.pixabay.com/photo/2019/11/08/09/27/family-4610864_1280.jpg") no-repeat center center/cover;
+            background: url("https://cdn.pixabay.com/photo/2019/11/08/09/27/family-4610864_1280.jpg") no-repeat center center/cover;
             display: flex;
             justify-content: center;
             align-items: center;
             color: rgb(248, 248, 248);
-            font: bold ;
+            font: bold;
             font-size: 70px;
             border-radius: 8px;
         }
-
 
         .section {
             padding: 60px 20px;
@@ -64,6 +69,7 @@
             gap: 15px;
             padding: 20px;
         }
+
         .gallery img {
             width: 100%;
             height: 200px;
@@ -71,11 +77,11 @@
             transition: transform 0.3s, box-shadow 0.3s;
             border-radius: 8px;
         }
+
         .gallery img:hover {
             transform: scale(1.05);
             box-shadow: 0 8px 15px #fa9005;
         }
-
 
         .footer {
             background-color: #fa9005;
@@ -92,15 +98,18 @@
             padding: 20px;
             background-color: #f7f7f7;
             border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        input, textarea {
+
+        input,
+        textarea {
             width: 100%;
             padding: 10px;
             margin-top: 8px;
             border: 1px solid #ccc;
             border-radius: 5px;
         }
+
         button {
             padding: 10px 20px;
             width: 100%;
@@ -112,36 +121,45 @@
             cursor: pointer;
             transition: background-color 0.3s;
         }
+
         button:hover {
-            background-color:#fa9005;
+            background-color: #fa9005;
         }
-        
-
-
     </style>
 </head>
+
 <body>
     <div class="navbar">
         <div>Travel Adventures</div>
         <div>
-             <a href="index.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="Abouts.html">About</a>
             <a href="destination.html">Destinations</a>
             <a href="Booknow.html">BOOK NOW!</a>
         </div>
-        
     </div>
-</div>
 
-        <div id="contact" class="section">
-            <h2>Book Now!</h2>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
+    <div id="contact" class="section">
+        <h2>Book Now!</h2>
+        <form id="bookingForm">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
 
+    <div class="footer">
+        &copy; 2024 Travel Adventures. All rights reserved.
+    </div>
+
+    <script>
+        document.getElementById('bookingForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Your message has been sent successfully!');
+            this.reset();
+        });
+    </script>
 </body>
+
 </html>
